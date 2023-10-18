@@ -4,113 +4,8 @@
     box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    width: 100%;
-    background-color: yellow;
-    padding: 5px 10px;
-    justify-content: space-between;
-}
 
-/* Left */
-
-.left {
-    width: 34%;
-    /* height: 200px; */
-    /* border: 2px solid black; */
-}
-
-.p-info1{
-    font-size: 17px;
-    margin-left: 60px;
-    margin-top: 10px;
-    color: rgb(78, 78, 78);
-}
-
-.p-info2{
-    font-size: 17px;
-    margin-left: 60px;
-    margin-top: 15px;
-    color: rgb(78, 78, 78);
-}
-
-.p-info3{
-    font-size: 17px;
-    margin-left: 60px;
-    margin-top: 15px;
-    color: rgb(78, 78, 78);
-}
-
-.p-info4{
-    font-size: 17px;
-    margin-left: 60px;
-    margin-top: 15px;
-    color: rgb(78, 78, 78);
-}
-
-/* Right */
-
-.right{
-    width: 64%;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.experience{
-    width: 100%;
-    height: 500px;
-    background-color: cyan;
-}
-
-.experience h1{
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-.experience .p1{
-    margin-left: 20px;
-}
-
-.experience .span1{
-    margin-left: 50px;
-    font-size: 20px;
-    color: rgb(0, 128, 128);
-}
-
-.experience button{
-    color: white;
-    background-color: rgb(0, 128, 128);
-    margin-left: 10px;
-    font-size: 12px;
-    padding: 3px 8px 3px 8px;
-    border: 1px solid rgb(0, 128, 128);
-    border-radius: 5px;
-}
-
-.education{
-    width: 100%;
-    height: 500px;
-    background-color: red;
-}
-
-
-/* Photo */
-
-.photo{
-    width: 100%;
-    height: 300px;
-    background-image: url(https://www.w3schools.com/w3images/avatar_hat.jpg);
-    background-size: cover;
-}
-
-.info{
-    width: 100%;
-    height: 700px;
-    background-color: aqua;
-}
+/* Media only screen and  */
 
 @media only screen and (max-width: 700px) {
     .container{
@@ -124,5 +19,595 @@
     .container .right {
         width: 100%;
     }
+
+    .footer{
+        display: none;
+    }
+
+    .right{
+        margin-left: 1.9rem;
+    }
+
+    .experience{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100%;
+    }
+
 }
 
+
+
+
+/* Container */
+
+.container{
+    display: flex;
+    width: 100%;
+    background-color: rgb(226, 225, 225);
+    padding: 5px 10px;
+    justify-content: space-between;
+    height: 1200px;
+}
+
+/* Left */
+
+.left {
+    width: 34%;
+    max-height: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/* Photo */
+
+.photo{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://www.w3schools.com/w3images/avatar_hat.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    box-shadow: 2px 2px 8px black;
+}
+
+.photo:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.photo p{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 30px;
+}
+
+
+/* Info */
+
+.info{
+    width: 100%;
+    height: 790px;
+    background-color: white;
+    box-shadow: 2px 2px 8px black;
+}
+
+.p-info1{
+    font-size: 17px;
+    margin-left: 30px;
+    color: rgb(78, 78, 78);
+}
+
+.p-info1 i, .p-info2 i, .p-info3 i, .p-info4 i{
+    color: rgb(0, 111, 128);
+}
+
+.p-info2{
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.p-info3{
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.p-info4{
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.info i{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.info .info-hr{
+    width: 95%;
+    margin: auto;
+}
+
+
+/* Skills */
+
+.info .skills{
+    margin-left: 30px;
+}
+
+
+/* Skills 1 */
+
+.info .skills1{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .adobe-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .adobe-loading2{
+    width: 88%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Skills 2 */
+
+.info .skills2{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .photography-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .photography-loading2{
+    width: 80%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Skills 3 */
+
+.info .skills3{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .illustrator-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .illustrator-loading2{
+    width: 75%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Skills 4 */
+
+.info .skills4{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .media-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .media-loading2{
+    width: 50%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Languages */
+
+.info .language{
+    margin-left: 30px;
+}
+
+
+/* Language 1 */
+
+.info .language1{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .english-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .english-loading2{
+    width: 100%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+
+/* Language 2 */
+
+.info .language2{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .spanish-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .spanish-loading2{
+    width: 60%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+
+/* Language 3 */
+
+.info .language3{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+
+.info .german-loading{
+    width: 90%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info .german-loading2{
+    width: 50%;
+    height: 20px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+
+
+/* Right */
+
+.right{
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.experience{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    box-shadow: 2px 2px 8px black;
+}
+
+
+/* Front End Developer */
+
+.experience .h1{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.experience .h1 i{
+    margin-right: 10px;
+    color: rgb(0, 111, 128);
+}
+
+.experience .p1{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(95, 95, 95);
+}
+
+.experience .span1{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.experience .span1 i{
+    margin-right: 10px;
+}
+
+.experience button{
+    color: white;
+    background-color: rgb(0, 128, 128);
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 3px 8px 3px 8px;
+    border: 1px solid rgb(0, 128, 128);
+    border-radius: 5px;
+}
+
+.experience .p1-2{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.experience .fed-hr{
+    width: 95%;
+    margin: auto;
+}
+
+
+/* Web Developer */
+
+.experience .h2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.experience .h2 i{
+    margin-right: 10px;
+    color: rgb(0, 111, 128);
+}
+
+.experience .span2{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.experience .span2 i{
+    margin-right: 10px;
+}
+
+.experience .p2{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.experience .wd-hr{
+    width: 95%;
+    margin: auto;
+}
+
+
+/*  Graphic Designer  */
+
+.experience .h2-2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.experience .h2 i{
+    margin-right: 10px;
+    color: rgb(0, 111, 128);
+}
+
+.experience .span3{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.experience .span3 i{
+    margin-right: 10px;
+}
+
+.experience .p3{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+
+/* Education */
+
+.education{
+    width: 100%;
+    height: 520px;
+    background-color: white;
+    box-shadow: 2px 2px 8px black;
+}
+
+/* W3Schools.com*/
+
+.education .Ed-h1{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.education .Ed-h1 i{
+    margin-right: 10px;
+    color: rgb(0, 111, 128);
+}
+
+.education .Ed-p1{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(95, 95, 95);
+}
+
+.education .Ed-span1{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.education .Ed-span1 i{
+    margin-right: 10px;
+}
+
+.education .Ed-p1-2{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.education .W3-hr{
+    width: 95%;
+    margin: auto;
+}
+
+
+/* London Business School */
+
+.education .Ed-h2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.education .Ed-span2{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.education .Ed-span2 i{
+    margin-right: 10px;
+}
+
+.education .Ed-p2{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.education .LBS-hr{
+    width: 95%;
+    margin: auto;
+}
+
+
+/*  School of Coding  */
+
+.education .Ed-h2-2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.education .Ed-h2 i{
+    margin-right: 10px;
+    color: rgb(0, 111, 128);
+}
+
+.education .Ed-span3{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+}
+
+.education .Ed-span3 i{
+    margin-right: 10px;
+}
+
+.education .Ed-p3{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(16, 157, 164);
+}
+
+.footer-p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.footer-icons{
+    text-align: center;
+    color: white;
+}
+
+.footer-span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+}
+
+.footer .footer-span a{
+    margin-left: 8px;
+    color: white;
+}
